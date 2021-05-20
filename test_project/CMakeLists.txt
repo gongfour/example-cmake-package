@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8.12)
+project(test_project)
+find_package(Custom-CP REQUIRED)
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE cmake-package)
